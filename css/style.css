@@ -242,7 +242,6 @@ img {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 80px;
 }
 
 .hero-content {
@@ -259,8 +258,88 @@ img {
 
 .hero p {
     font-size: 1.3rem;
-    margin-bottom: 30px;
     font-weight: 300;
+}
+
+@media (max-height: 900px) {
+    .hero-content > p {
+        display: none;
+    }
+}
+
+@media (max-height: 800px) {
+    .hero .btn {
+        padding: 10px 25px;
+        font-size: 0.85rem;
+    }
+
+    .hero .hero-buttons {
+        gap: 10px;
+    }
+
+    .hero .hero-buttons-secondary {
+        margin-top: 10px;
+    }
+}
+
+@media (max-height: 720px) {
+    .hero-content > h1 {
+        display: none;
+    }
+}
+
+.delivery-info {
+    padding: 20px;
+}
+
+.delivery-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.delivery-icon {
+    font-size: 1.8rem;
+}
+
+.delivery-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ff6b5a;
+    font-weight: 600;
+}
+
+.delivery-hours {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.delivery-hours p {
+    font-size: 0.9rem;
+    color: #b5b5b5;
+    margin: 2px 0;
+    font-weight: 400;
+}
+
+.delivery-cities {
+    text-align: center;
+}
+
+.delivery-cities-label {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.delivery-cities-list {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--white);
+    margin: 0;
 }
 
 /* Hero étendu avec texte complet */
@@ -1014,8 +1093,7 @@ img {
     }
 
     .hero {
-        align-items: flex-start;
-        padding-top: 15vh;
+        /*align-items: flex-start;*/
     }
 
     .hero h1 {
@@ -1025,7 +1103,6 @@ img {
 
     .hero p {
         font-size: 1rem;
-        margin-bottom: 10vh;
     }
 
     .features-grid {
@@ -1044,6 +1121,28 @@ img {
 @media (max-width: 480px) {
     .hero h1 {
         font-size: 1.6rem;
+    }
+
+    .delivery-badge {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .delivery-icon {
+        font-size: 1.5rem;
+    }
+
+    .delivery-text {
+        font-size: 1.1rem;
+    }
+
+    .delivery-cities-label {
+        font-size: 0.85rem;
+    }
+
+    .delivery-cities-list {
+        font-size: 0.85rem;
+        line-height: 1.5;
     }
 
     .btn {
