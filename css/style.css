@@ -326,6 +326,18 @@ img {
     font-weight: 400;
 }
 
+.delivery-payment {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.delivery-payment p {
+    font-size: 0.95rem;
+    color: var(--white);
+    margin: 2px 0;
+    font-weight: 500;
+}
+
 .delivery-cities {
     text-align: center;
 }
@@ -1104,7 +1116,7 @@ img {
     }
 
     .hero p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .features-grid {
@@ -1345,6 +1357,12 @@ img {
 
     .floating-btn-icon {
         font-size: 1.1rem;
+    }
+
+    .modal-phone {
+        font-size: 1.4rem;
+        padding: 12px 25px;
+        letter-spacing: 1px;
     }
 }
 
