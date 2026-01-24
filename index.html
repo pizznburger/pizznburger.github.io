@@ -25,8 +25,14 @@
             <nav class="nav nav-desktop">
                 <ul class="nav-list">
                     <li><a href="/" class="active">Accueil</a></li>
-                    <li><a href="pizzas/">Nos Pizzas</a></li>
-                    <li><a href="burgers/">Nos Burgers</a></li>
+                    <li class="has-dropdown">
+                        <a href="#">Notre Carte</a>
+                        <ul class="dropdown">
+                            <li><a href="pizzas/">Nos Pizzas</a></li>
+                            <li><a href="burgers/">Nos Burgers</a></li>
+                            <li><a href="desserts/">Menu Enfant / Nos Desserts</a></li>
+                        </ul>
+                    </li>
                     <li><a href="contact/">Contact</a></li>
                     <li><a href="entreprises/">Offre entreprises & pro</a></li>
                 </ul>
@@ -39,6 +45,7 @@
             <li><a href="/" class="active">Accueil</a></li>
             <li><a href="pizzas/">Nos Pizzas</a></li>
             <li><a href="burgers/">Nos Burgers</a></li>
+            <li><a href="desserts/">Menu Enfant / Nos Desserts</a></li>
             <li><a href="contact/">Contact</a></li>
             <li><a href="entreprises/">Offre entreprises & professionnels</a></li>
         </ul>
@@ -66,7 +73,7 @@
                 <div class="hero-buttons">
                     <a href="pizzas/" class="btn">Découvrir nos Pizzas</a>
                     <a href="burgers/" class="btn">Découvrir nos Burgers</a>
-                    <button class="btn btn-outline" id="orderBtn">Passer commande</button>
+                    <a href="desserts/" class="btn">Menu Enfant / Nos Desserts</a>
                 </div>
                 <div class="hero-buttons-secondary">
                     <a href="entreprises/" class="btn btn-outline">Offre Entreprises</a>
