@@ -138,11 +138,12 @@
             box-shadow: 0 0 20px rgba(231, 76, 60, 0.5), 0 0 60px rgba(0,0,0,0.3);
             transition: transform 10s cubic-bezier(0.17, 0.67, 0.12, 0.99);
             border: 6px solid var(--white);
+        }
+
+        .wheel.spinning {
             will-change: transform;
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
-            -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
         }
 
         .wheel-segment {
@@ -530,6 +531,9 @@
             const prize = getPrize();
             const prizeIndex = prizes.indexOf(prize);
             
+            // Enable GPU acceleration for spinning
+            wheel.classList.add('spinning');
+            
             // Calculate rotation so the winning segment aligns with the pointer at top
             // The pointer is at top (0°), and labels are centered in their segments
             // Each label is at: (index * segmentAngle) + (segmentAngle / 2)
@@ -545,6 +549,9 @@
 
             // After animation (10s + 0.5s buffer)
             setTimeout(() => {
+                // Disable GPU acceleration after spinning
+                wheel.classList.remove('spinning');
+                
                 const now = new Date();
                 const dateStr = now.toLocaleDateString('fr-FR', {
                     day: '2-digit',
