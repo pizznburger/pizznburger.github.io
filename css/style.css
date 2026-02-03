@@ -291,7 +291,11 @@ img {
 }
 
 .delivery-info {
+    margin: 20px;
     padding: 20px;
+    border: 2px solid var(--white);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
 }
 
 .delivery-badge {
