@@ -584,6 +584,14 @@ img {
     color: var(--white);
 }
 
+.first-section + .page-header {
+    padding-top: 15px;
+}
+
+.menu-section.first-section {
+    padding-top: 95px;
+}
+
 .page-header h1 {
     font-size: clamp(1.8rem, 5vw, 2.5rem);
     padding: 10px 0px;
@@ -1180,6 +1188,14 @@ img {
 
     .page-header {
         padding: 95px 0 15px;
+    }
+
+    .first-section + .page-header {
+        padding-top: 15px;
+    }
+
+    .menu-section.first-section {
+        padding-top: 95px;
     }
 }
 
