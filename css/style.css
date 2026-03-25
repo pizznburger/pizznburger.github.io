@@ -709,6 +709,15 @@ img {
     white-space: nowrap;
 }
 
+.formule-disponibilite {
+    text-align: center;
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
