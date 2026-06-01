@@ -101,7 +101,6 @@ img {
     max-width: calc(100vw - 500px);
     object-fit: contain;
     image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
 }
 
 .nav.nav-desktop {
