@@ -719,6 +719,7 @@ img {
 
 .menu-section {
     padding: 10px 0;
+    padding-bottom: 30px;
 }
 
 .menu-section:nth-child(even) {
