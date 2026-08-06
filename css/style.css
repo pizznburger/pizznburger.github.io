@@ -751,8 +751,9 @@ img {
 
 .formule-disponibilite {
     text-align: center;
-    font-size: clamp(0.8rem, 2.5vw, 1rem);
-    color: var(--accent);
+    font-size: clamp(1.0rem, 2.5vw, 1.5rem);
+    color: rgba(233, 102, 88, 0.9);
+    text-decoration: underline;
     font-weight: 600;
     margin-bottom: 20px;
     font-style: italic;
