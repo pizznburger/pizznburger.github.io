@@ -422,7 +422,8 @@ img {
 
 .hero-horaire-jours,
 .hero-horaire-heures {
-    font-size: clamp(0.72rem, 1.6vw, 0.9rem);
+    text-transform: uppercase;
+    font-size: clamp(0.6rem, 3vw, 0.9rem);
     line-height: 1.4;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
     white-space: nowrap;
